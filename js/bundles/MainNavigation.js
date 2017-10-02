@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([2],{
+webpackJsonppageComponent([43],{
 
-/***/ 14:
+/***/ 11:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21,11 +21,11 @@ var _metalDom = __webpack_require__(3);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalSoy = __webpack_require__(2);
+var _metalSoy = __webpack_require__(0);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _MainNavigation = __webpack_require__(16);
+var _MainNavigation = __webpack_require__(22);
 
 var _MainNavigation2 = _interopRequireDefault(_MainNavigation);
 
@@ -70,7 +70,7 @@ exports.default = MainNavigation;
 
 /***/ }),
 
-/***/ 16:
+/***/ 22:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,7 +79,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
 /* jshint ignore:start */
 
@@ -130,14 +130,14 @@ function $render(opt_data, opt_ignored, opt_ijData) {
   if (opt_data.section.children) {
     ie_open('ul', null, null,
         'class', 'nav nav-nested nav-pills nav-stacked');
-      var childIdList45 = opt_data.section.childIds;
-      var childIdListLen45 = childIdList45.length;
-      for (var childIdIndex45 = 0; childIdIndex45 < childIdListLen45; childIdIndex45++) {
-        var childIdData45 = childIdList45[childIdIndex45];
-        var page__soy28 = opt_data.section.children[childIdData45];
+      var childIdList44 = opt_data.section.childIds;
+      var childIdListLen44 = childIdList44.length;
+      for (var childIdIndex44 = 0; childIdIndex44 < childIdListLen44; childIdIndex44++) {
+        var childIdData44 = childIdList44[childIdIndex44];
+        var page__soy28 = opt_data.section.children[childIdData44];
         if (! page__soy28.hidden) {
           ie_open('li', null, null,
-              'class', (page__soy28.active ? 'active' : '') + ' ' + (page__soy28.children ? 'nav-heading' : ''));
+              'class', (page__soy28.active ? 'active ' : '') + (page__soy28.children ? 'nav-heading' : ''));
             $anchor(soy.$$assignDefaults({page: page__soy28}, opt_data), null, opt_ijData);
             if (! opt_data.depth || localCurrentDepth__soy24 + 1 < opt_data.depth) {
               $render({currentDepth: localCurrentDepth__soy24 + 1, depth: opt_data.depth, section: page__soy28}, null, opt_ijData);
@@ -164,16 +164,18 @@ if (goog.DEBUG) {
 function $anchor(opt_data, opt_ignored, opt_ijData) {
   if (opt_data.page.icon) {
     ie_open('svg', null, null,
-        'class', 'lexicon-icon icon-monospaced');
+        'class', 'clay-icon icon-monospaced');
       ie_void('use', null, null,
           'xlink:href', '/images/icons/lexicon-site-icons.svg#' + opt_data.page.icon);
     ie_close('svg');
   }
   if (! opt_data.page.children) {
     ie_open('a', null, null,
+        'class', 'align-middle',
         'href', opt_data.page.url);
     } else {
       ie_open('a', null, null,
+          'class', 'align-middle',
           'data-onclick', 'handleCollapseClick_',
           'href', 'javascript:;');
       }
@@ -183,7 +185,7 @@ function $anchor(opt_data, opt_ignored, opt_ijData) {
       ie_close('span');
       if (opt_data.page.children) {
         ie_open('svg', null, null,
-            'class', 'collapse-toggle lexicon-icon icon-monospaced');
+            'class', 'collapse-toggle clay-icon icon-monospaced');
           ie_void('use', null, null,
               'xlink:href', '/vendor/lexicon/icons.svg#caret-bottom');
         ie_close('svg');
@@ -213,4 +215,4 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MainNavigation, templ
 
 /***/ })
 
-},[14]);
+},[11]);
