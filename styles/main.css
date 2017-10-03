@@ -11874,30 +11874,16 @@ button.loading > .linear.loading-animation {
   background-color: #272833;
   color: #FFF;
   min-height: 96px;
-  padding: 12px 0; }
-  @media (max-width: 900px) {
-    .footer {
-      text-align: center; } }
+  padding: 24px 0; }
   @media (min-width: 900px) {
     .footer {
-      padding: 47px 0; } }
-  @media (min-width: 900px) {
-    .footer .text-right-lg {
-      text-align: right; } }
+      padding: 120px 0; } }
   .footer a {
     color: #FFF; }
   .footer span {
     line-height: 24px; }
     .footer span a {
       font-weight: 600; }
-  .footer .sticker {
-    background-color: #B3472D;
-    margin: 12px 8px; }
-    @media (min-width: 900px) {
-      .footer .sticker {
-        margin: 0 0 0 18.04511px; } }
-  .footer .sticker:hover {
-    color: #FFF; }
   .footer .row img.logo {
     margin: 12px 8px;
     max-height: 32.00002px;
@@ -11910,7 +11896,20 @@ button.loading > .linear.loading-animation {
   padding: 12px 0; }
   @media (min-width: 900px) {
     .docs header {
-      padding: 24px 0; } }
+      padding: 48px 0 24px; } }
+  .docs header h1 {
+    font-size: 36px;
+    font-weight: 700; }
+
+.docs article > h3 {
+  font-size: 16.8px;
+  font-weight: 700;
+  margin-bottom: 63.84px;
+  padding-top: 48px;
+  text-transform: uppercase; }
+
+.docs article > p {
+  margin-bottom: 48px; }
 
 .about {
   font-size: 18px;
@@ -11927,8 +11926,8 @@ button.loading > .linear.loading-animation {
   transition: all 0.4s ease-in-out; }
   .navbar-clay-site.scroll {
     background-color: #B3472D;
-    padding: 16px 0;
-    box-shadow: 0 2px 6px rgba(62, 28, 20, 0.2); }
+    box-shadow: 0 2px 6px rgba(62, 28, 20, 0.2);
+    padding: 13.992px; }
   .navbar-clay-site .navbar-brand span {
     font-size: 30px;
     font-weight: 700;
@@ -12005,7 +12004,8 @@ button.loading > .linear.loading-animation {
   border-radius: 0;
   box-shadow: 4px 6px 36px rgba(48, 49, 63, 0.15);
   margin-bottom: 32px;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  min-height: 100%; }
   .home .card:hover {
     background-color: #FFF6F5;
     border-color: #B3472D;
@@ -12107,7 +12107,7 @@ button.loading > .linear.loading-animation {
   @media (min-width: 576px) {
     .contact-us {
       background-size: 140%;
-      margin-top: -120px;
+      margin-top: -60px;
       padding: 244px 0 212px; } }
   .contact-us .media-body p {
     line-height: 1.5; }
@@ -12374,17 +12374,26 @@ blockquote p,
   .sidebar-clay-site .sidebar-header {
     background-color: #FFF;
     padding: 0; }
-    @media (max-width: 900px) {
+    @media (min-width: 900px) {
+      .sidebar-clay-site .sidebar-header {
+        padding-top: 39.84px; } }
+    @media (max-width: 899px) {
       .sidebar-clay-site .sidebar-header {
         left: 0;
         position: fixed;
         right: 0;
         top: 0; } }
-    @media (min-width: 900px -1) {
-      .sidebar-clay-site .sidebar-header {
-        padding: 40.8px 15.84px 55.92px; } }
   .sidebar-clay-site .sidebar-body {
-    padding-top: 24px; }
+    padding-bottom: 48px;
+    padding-top: 24px;
+    overflow: visible; }
+  .sidebar-clay-site .nav-icons {
+    padding: 0 24px 96px 39.84px; }
+    .sidebar-clay-site .nav-icons .sticker-secondary {
+      background-color: #CDCED9; }
+    .sidebar-clay-site .nav-icons .lexicon-icon {
+      fill: #FFF;
+      width: 1.3em; }
   .sidebar-clay-site .input-group {
     width: 100%; }
     .sidebar-clay-site .input-group .input-group-addon {
@@ -12454,6 +12463,7 @@ blockquote p,
     float: left;
     height: 40px;
     padding: 2px; }
+  .sidebar-clay-site .nav-pills > li.active > a,
   .sidebar-clay-site .nav-pills > li > ul > li.active > a,
   .sidebar-clay-site .nav-pills > li > ul > li.active > a:hover,
   .sidebar-clay-site .nav-pills > li > ul > li.active > a:focus,

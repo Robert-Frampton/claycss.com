@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([42],[
+webpackJsonppageComponent([36],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -648,7 +648,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'sidebar-toggler-content sidenav-fixed sidenav-menu-slider',
         'id', 'clay-sidebar');
       ie_open('div', null, null,
-          'class', 'sidebar sidebar-clay-site sidenav-menu');
+          'class', 'sidebar sidebar-clay-site sidenav-menu d-flex flex-column');
         ie_open('div', null, null,
             'class', 'sidebar-header');
           ie_open('div', null, null,
@@ -689,7 +689,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_close('div');
         ie_close('div');
         ie_open('div', null, null,
-            'class', 'sidebar-body');
+            'class', 'sidebar-body mb-auto');
           ie_open('div', null, null,
               'class', 'sidebar-search');
             $templateAlias1({maxResults: 5, path: '/docs/', placeholder: 'Search'}, null, opt_ijData);
@@ -721,6 +721,36 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_close('div');
           $templateAlias2(opt_data, null, opt_ijData);
         ie_close('div');
+        ie_open('ul', null, null,
+            'class', 'nav-icons');
+          ie_open('li', null, null,
+              'class', 'd-block mb-3');
+            ie_open('a', null, null,
+                'class', 'rounded-circle sticker sticker-secondary',
+                'href', 'https://github.com/liferay/clay/issues',
+                'target', '_blank');
+              ie_open('svg', null, null,
+                  'aria-hidden', 'true',
+                  'class', 'lexicon-icon lexicon-icon-bars');
+                ie_void('use', null, null,
+                    'xlink:href', '/vendor/lexicon/icons.svg#comments');
+              ie_close('svg');
+            ie_close('a');
+          ie_close('li');
+          ie_open('li', null, null,
+              'class', 'd-block');
+            ie_open('a', null, null,
+                'class', 'rounded-circle sticker sticker-secondary',
+                'href', 'https://github.com/liferay/clay',
+                'target', '_blank');
+              ie_open('img', null, null,
+                  'class', 'lexicon-icon',
+                  'src', '/images/home/GitHub-Mark-64px.svg',
+                  'alt', '');
+              ie_close('img');
+            ie_close('a');
+          ie_close('li');
+        ie_close('ul');
       ie_close('div');
     ie_close('nav');
   ie_close('div');

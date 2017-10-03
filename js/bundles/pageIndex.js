@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([0,42,43],[
+webpackJsonppageComponent([0,36,37],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -2427,11 +2427,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param93 = function() {
+  var param113 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index.children['docs']}, opt_data), null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param93}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param113}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2473,7 +2473,6 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
         ie_close('nav');
       ie_close('div');
     ie_close('div');
-    $footer(null, null, opt_ijData);
   ie_close('div');
 }
 exports.guide = $guide;
@@ -2481,72 +2480,10 @@ if (goog.DEBUG) {
   $guide.soyTemplateName = 'guide.guide';
 }
 
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $footer(opt_data, opt_ignored, opt_ijData) {
-  ie_open('div', null, null,
-      'class', 'footer');
-    ie_open('div', null, null,
-        'class', 'container-fluid');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-md-7');
-          ie_void('div', null, null,
-              'class', 'clearfix hidden-lg hidden-md');
-          ie_open('span');
-            itext('Brought to you by ');
-            ie_open('a', null, null,
-                'href', 'http://www.liferay.com',
-                'target', '_blank');
-              itext('Liferay, Inc.');
-            ie_close('a');
-          ie_close('span');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-5 text-right-lg');
-          ie_open('a', null, null,
-              'class', 'sticker sticker-default sticker-rounded sticker-static',
-              'href', 'https://twitter.com/Liferay_Lexicon',
-              'target', '_blank');
-            ie_open('svg', null, null,
-                'class', 'lexicon-icon');
-              ie_void('use', null, null,
-                  'xlink:href', '/vendor/lexicon/icons.svg#twitter');
-            ie_close('svg');
-          ie_close('a');
-          ie_open('a', null, null,
-              'class', 'sticker sticker-default sticker-rounded sticker-static',
-              'href', 'https://github.com/liferay/lexicon-site/issues',
-              'target', '_blank');
-            ie_open('svg', null, null,
-                'class', 'lexicon-icon');
-              ie_void('use', null, null,
-                  'xlink:href', '/vendor/lexicon/icons.svg#comments');
-            ie_close('svg');
-          ie_close('a');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('div');
-}
-exports.footer = $footer;
-if (goog.DEBUG) {
-  $footer.soyTemplateName = 'guide.footer';
-}
-
 exports.render.params = ["page","site"];
 exports.render.types = {"page":"any","site":"any"};
 exports.guide.params = ["page","content"];
 exports.guide.types = {"page":"any","content":"any"};
-exports.footer.params = [];
-exports.footer.types = {};
 templates = exports;
 return exports;
 
@@ -3319,7 +3256,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'sidebar-toggler-content sidenav-fixed sidenav-menu-slider',
         'id', 'clay-sidebar');
       ie_open('div', null, null,
-          'class', 'sidebar sidebar-clay-site sidenav-menu');
+          'class', 'sidebar sidebar-clay-site sidenav-menu d-flex flex-column');
         ie_open('div', null, null,
             'class', 'sidebar-header');
           ie_open('div', null, null,
@@ -3360,7 +3297,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_close('div');
         ie_close('div');
         ie_open('div', null, null,
-            'class', 'sidebar-body');
+            'class', 'sidebar-body mb-auto');
           ie_open('div', null, null,
               'class', 'sidebar-search');
             $templateAlias1({maxResults: 5, path: '/docs/', placeholder: 'Search'}, null, opt_ijData);
@@ -3392,6 +3329,36 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_close('div');
           $templateAlias2(opt_data, null, opt_ijData);
         ie_close('div');
+        ie_open('ul', null, null,
+            'class', 'nav-icons');
+          ie_open('li', null, null,
+              'class', 'd-block mb-3');
+            ie_open('a', null, null,
+                'class', 'rounded-circle sticker sticker-secondary',
+                'href', 'https://github.com/liferay/clay/issues',
+                'target', '_blank');
+              ie_open('svg', null, null,
+                  'aria-hidden', 'true',
+                  'class', 'lexicon-icon lexicon-icon-bars');
+                ie_void('use', null, null,
+                    'xlink:href', '/vendor/lexicon/icons.svg#comments');
+              ie_close('svg');
+            ie_close('a');
+          ie_close('li');
+          ie_open('li', null, null,
+              'class', 'd-block');
+            ie_open('a', null, null,
+                'class', 'rounded-circle sticker sticker-secondary',
+                'href', 'https://github.com/liferay/clay',
+                'target', '_blank');
+              ie_open('img', null, null,
+                  'class', 'lexicon-icon',
+                  'src', '/images/home/GitHub-Mark-64px.svg',
+                  'alt', '');
+              ie_close('img');
+            ie_close('a');
+          ie_close('li');
+        ie_close('ul');
       ie_close('div');
     ie_close('nav');
   ie_close('div');
@@ -11098,14 +11065,7 @@ exports.default = parseFromAnchor;
 /* 124 */,
 /* 125 */,
 /* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */
+/* 127 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11163,10 +11123,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param137 = function() {
+  var param92 = function() {
     $header(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({content: param137, elementClasses: 'home'}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param92, elementClasses: 'home'}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -11207,8 +11167,20 @@ function $header(opt_data, opt_ignored, opt_ijData) {
               'class', 'nav-item');
             ie_open('a', null, null,
                 'class', 'nav-link ml-3',
-                'href', '/docs/components/typography.html');
-              itext('Components');
+                'href', '/docs/components/alerts.html');
+              itext('Components Library');
+            ie_close('a');
+          ie_close('li');
+          ie_open('li', null, null,
+              'class', 'nav-item');
+            ie_open('a', null, null,
+                'class', 'ml-4',
+                'href', 'https://github.com/liferay/clay',
+                'target', '_blank');
+              ie_open('img', null, null,
+                  'src', '/images/home/GitHub-Mark-64px.svg',
+                  'alt', '');
+              ie_close('img');
             ie_close('a');
           ie_close('li');
         ie_close('ul');
@@ -11232,19 +11204,19 @@ function $header(opt_data, opt_ignored, opt_ijData) {
             ie_close('h2');
             ie_open('a', null, null,
                 'class', 'btn btn-lg btn-light mx-3 mb-2',
-                'href', '#teasers');
+                'href', '/docs/clay');
               itext('Get Started');
             ie_close('a');
             ie_open('a', null, null,
                 'class', 'btn btn-lg btn-outline-light mx-3 mb-2',
-                'href', 'https://github.com/liferay/clay/archive/master.zip',
-                'rel', 'nofollow');
+                'href', 'https://github.com/liferay/clay',
+                'target', '_blank');
               ie_open('img', null, null,
                   'class', 'mr-2',
                   'src', '/images/home/file-download.svg',
                   'alt', '');
               ie_close('img');
-              itext('Download v 2.0');
+              itext('Download');
             ie_close('a');
           ie_close('div');
         ie_close('div');
@@ -11276,12 +11248,12 @@ function $teasers(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null,
         'class', 'container-fluid container-fluid-max-lg');
       ie_open('div', null, null,
-          'class', 'row');
+          'class', 'row mb-4');
         ie_open('div', null, null,
             'class', 'col-1 d-none d-md-block');
           ie_open('div', null, null,
-              'class', 'vertical-title text-uppercase');
-            itext('ExploreClay');
+              'class', 'vertical-title text-uppercase text-nowrap');
+            itext('Explore Clay');
           ie_close('div');
         ie_close('div');
         ie_open('div', null, null,
@@ -11302,6 +11274,16 @@ function $teasers(opt_data, opt_ignored, opt_ijData) {
               ie_open('p');
                 itext('Clay is Liferay\'s web implementation of Lexicon Experience Language. Built with Bootstrap as a foundation, it\'s comprised of HTML, CSS, and JS.');
               ie_close('p');
+              ie_open('a', null, null,
+                  'href', '/docs/clay',
+                  'class', 'btn btn-sm text-uppercase font-weight-bold');
+                ie_open('img', null, null,
+                    'class', 'mr-2',
+                    'src', '/images/home/chevron-right.svg',
+                    'alt', '');
+                ie_close('img');
+                itext('Learn More');
+              ie_close('a');
             ie_close('div');
           ie_close('div');
         ie_close('div');
@@ -11314,16 +11296,26 @@ function $teasers(opt_data, opt_ignored, opt_ijData) {
                 'class', 'card-body');
               ie_open('img', null, null,
                   'class', 'mx-auto',
-                  'src', '/images/home/why.svg',
+                  'src', '/images/home/news.svg',
                   'alt', '');
               ie_close('img');
               ie_open('h2', null, null,
                   'class', 'font-weight-bold');
-                itext('Why Clay?');
+                itext('News');
               ie_close('h2');
               ie_open('p');
-                itext('Because Clay is modeled after Lexicon\'s pattern library, you can rest assured, that your web application\'s UI will have a consistent style and user experience.');
+                itext('Stay up-to-date on Clay\'s progress, fixed issues, and new features by visiting our Release Notes.');
               ie_close('p');
+              ie_open('a', null, null,
+                  'href', '/docs/news',
+                  'class', 'btn btn-sm text-uppercase font-weight-bold');
+                ie_open('img', null, null,
+                    'class', 'mr-2',
+                    'src', '/images/home/chevron-right.svg',
+                    'alt', '');
+                ie_close('img');
+                itext('Learn More');
+              ie_close('a');
             ie_close('div');
           ie_close('div');
         ie_close('div');
@@ -11359,54 +11351,18 @@ function $teasers(opt_data, opt_ignored, opt_ijData) {
                   ie_open('p');
                     itext('Browse Clay\'s extensive Component Library, where you\'ll find useful components\u2014with extensive code examples\u2014for your web application.');
                   ie_close('p');
+                  ie_open('a', null, null,
+                      'href', '/docs/components/alerts.html',
+                      'class', 'btn btn-sm text-uppercase font-weight-bold');
+                    ie_open('img', null, null,
+                        'class', 'mr-2',
+                        'src', '/images/home/chevron-right.svg',
+                        'alt', '');
+                    ie_close('img');
+                    itext('Learn More');
+                  ie_close('a');
                 ie_close('div');
               ie_close('div');
-            ie_close('div');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-md-5 ml-auto');
-          ie_open('div', null, null,
-              'class', 'card card-2 wow fadeInUp');
-            ie_open('div', null, null,
-                'class', 'card-body text-center');
-              ie_open('img', null, null,
-                  'class', 'mx-auto',
-                  'src', '/images/home/tools.svg',
-                  'alt', '');
-              ie_close('img');
-              ie_open('h2', null, null,
-                  'class', 'font-weight-bold');
-                itext('Resources');
-              ie_close('h2');
-              ie_open('p');
-                itext('Browse Clay\'s extensive Component Library, where you\'ll find useful components\u2014with extensive code examples\u2014for your web application.');
-              ie_close('p');
-            ie_close('div');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-5 mr-auto');
-          ie_open('div', null, null,
-              'class', 'card card-2 wow fadeInUp',
-              'data-wow-delay', '0.1s');
-            ie_open('div', null, null,
-                'class', 'card-body text-center');
-              ie_open('img', null, null,
-                  'class', 'mx-auto',
-                  'src', '/images/home/news.svg',
-                  'alt', '');
-              ie_close('img');
-              ie_open('h2', null, null,
-                  'class', 'font-weight-bold');
-                itext('Release Notes');
-              ie_close('h2');
-              ie_open('p');
-                itext('Stay up-to-date on Clay\'s progress, fixed issues, and new features by visiting our Release Notes. Maybe some more words here to fill the blank space.');
-              ie_close('p');
             ie_close('div');
           ie_close('div');
         ie_close('div');
@@ -11452,9 +11408,9 @@ function $contactus(opt_data, opt_ignored, opt_ijData) {
               'class', 'media-body mt-4');
             ie_open('p', null, null,
                 'class', 'h1 font-weight-bold');
-              itext('Found an issue? Want to contribute? Head on over to the ');
+              itext('Want to contribute? Found an issue? Head on over to the ');
               ie_open('a', null, null,
-                  'href', 'https://github.com/liferay/clay/issues',
+                  'href', 'https://github.com/liferay/clay',
                   'target', '_blank');
                 itext('GitHub repo.');
               ie_close('a');
@@ -11543,7 +11499,7 @@ function $linkblocks(opt_data, opt_ignored, opt_ijData) {
                   'class', 'mb-3',
                   'target', '_blank',
                   'href', 'http://liferay.github.io/clay/');
-                itext('Clay v 1.0');
+                itext('Lexicon CSS');
               ie_close('a');
             ie_close('div');
           ie_close('div');
@@ -11630,6 +11586,13 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageIndex, templates)
 
 
 /***/ }),
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
 /* 135 */,
 /* 136 */,
 /* 137 */,
@@ -11689,20 +11652,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageIndex, templates)
 /* 191 */,
 /* 192 */,
 /* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11732,7 +11682,7 @@ __webpack_require__(17);
 
 __webpack_require__(18);
 
-var _indexSoy = __webpack_require__(134);
+var _indexSoy = __webpack_require__(127);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -11763,4 +11713,4 @@ _metalSoy2.default.register(pageIndex, _indexSoy2.default);
 exports.default = pageIndex;
 
 /***/ })
-],[207]);
+],[194]);

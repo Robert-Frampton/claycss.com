@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([1,42,43],[
+webpackJsonppageComponent([1,36,37],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -2427,11 +2427,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param93 = function() {
+  var param113 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index.children['docs']}, opt_data), null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param93}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param113}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2473,7 +2473,6 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
         ie_close('nav');
       ie_close('div');
     ie_close('div');
-    $footer(null, null, opt_ijData);
   ie_close('div');
 }
 exports.guide = $guide;
@@ -2481,72 +2480,10 @@ if (goog.DEBUG) {
   $guide.soyTemplateName = 'guide.guide';
 }
 
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $footer(opt_data, opt_ignored, opt_ijData) {
-  ie_open('div', null, null,
-      'class', 'footer');
-    ie_open('div', null, null,
-        'class', 'container-fluid');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-md-7');
-          ie_void('div', null, null,
-              'class', 'clearfix hidden-lg hidden-md');
-          ie_open('span');
-            itext('Brought to you by ');
-            ie_open('a', null, null,
-                'href', 'http://www.liferay.com',
-                'target', '_blank');
-              itext('Liferay, Inc.');
-            ie_close('a');
-          ie_close('span');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-5 text-right-lg');
-          ie_open('a', null, null,
-              'class', 'sticker sticker-default sticker-rounded sticker-static',
-              'href', 'https://twitter.com/Liferay_Lexicon',
-              'target', '_blank');
-            ie_open('svg', null, null,
-                'class', 'lexicon-icon');
-              ie_void('use', null, null,
-                  'xlink:href', '/vendor/lexicon/icons.svg#twitter');
-            ie_close('svg');
-          ie_close('a');
-          ie_open('a', null, null,
-              'class', 'sticker sticker-default sticker-rounded sticker-static',
-              'href', 'https://github.com/liferay/lexicon-site/issues',
-              'target', '_blank');
-            ie_open('svg', null, null,
-                'class', 'lexicon-icon');
-              ie_void('use', null, null,
-                  'xlink:href', '/vendor/lexicon/icons.svg#comments');
-            ie_close('svg');
-          ie_close('a');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('div');
-}
-exports.footer = $footer;
-if (goog.DEBUG) {
-  $footer.soyTemplateName = 'guide.footer';
-}
-
 exports.render.params = ["page","site"];
 exports.render.types = {"page":"any","site":"any"};
 exports.guide.params = ["page","content"];
 exports.guide.types = {"page":"any","content":"any"};
-exports.footer.params = [];
-exports.footer.types = {};
 templates = exports;
 return exports;
 
@@ -3319,7 +3256,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'sidebar-toggler-content sidenav-fixed sidenav-menu-slider',
         'id', 'clay-sidebar');
       ie_open('div', null, null,
-          'class', 'sidebar sidebar-clay-site sidenav-menu');
+          'class', 'sidebar sidebar-clay-site sidenav-menu d-flex flex-column');
         ie_open('div', null, null,
             'class', 'sidebar-header');
           ie_open('div', null, null,
@@ -3360,7 +3297,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_close('div');
         ie_close('div');
         ie_open('div', null, null,
-            'class', 'sidebar-body');
+            'class', 'sidebar-body mb-auto');
           ie_open('div', null, null,
               'class', 'sidebar-search');
             $templateAlias1({maxResults: 5, path: '/docs/', placeholder: 'Search'}, null, opt_ijData);
@@ -3392,6 +3329,36 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_close('div');
           $templateAlias2(opt_data, null, opt_ijData);
         ie_close('div');
+        ie_open('ul', null, null,
+            'class', 'nav-icons');
+          ie_open('li', null, null,
+              'class', 'd-block mb-3');
+            ie_open('a', null, null,
+                'class', 'rounded-circle sticker sticker-secondary',
+                'href', 'https://github.com/liferay/clay/issues',
+                'target', '_blank');
+              ie_open('svg', null, null,
+                  'aria-hidden', 'true',
+                  'class', 'lexicon-icon lexicon-icon-bars');
+                ie_void('use', null, null,
+                    'xlink:href', '/vendor/lexicon/icons.svg#comments');
+              ie_close('svg');
+            ie_close('a');
+          ie_close('li');
+          ie_open('li', null, null,
+              'class', 'd-block');
+            ie_open('a', null, null,
+                'class', 'rounded-circle sticker sticker-secondary',
+                'href', 'https://github.com/liferay/clay',
+                'target', '_blank');
+              ie_open('img', null, null,
+                  'class', 'lexicon-icon',
+                  'src', '/images/home/GitHub-Mark-64px.svg',
+                  'alt', '');
+              ie_close('img');
+            ie_close('a');
+          ie_close('li');
+        ie_close('ul');
       ie_close('div');
     ie_close('nav');
   ie_close('div');
@@ -11097,14 +11064,7 @@ exports.default = parseFromAnchor;
 /* 123 */,
 /* 124 */,
 /* 125 */,
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */,
-/* 133 */
+/* 126 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11165,7 +11125,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param175 = function() {
+  var param160 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index.children['docs']}, opt_data), null, opt_ijData);
     ie_open('div', null, null,
         'class', 'sidebar-offset');
@@ -11196,7 +11156,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_close('div');
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param175}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param160}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -11218,6 +11178,13 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templ
 
 
 /***/ }),
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
 /* 134 */,
 /* 135 */,
 /* 136 */,
@@ -11277,20 +11244,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templ
 /* 190 */,
 /* 191 */,
 /* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11320,7 +11274,7 @@ __webpack_require__(17);
 
 __webpack_require__(18);
 
-var _searchSoy = __webpack_require__(133);
+var _searchSoy = __webpack_require__(126);
 
 var _searchSoy2 = _interopRequireDefault(_searchSoy);
 
@@ -11351,4 +11305,4 @@ _metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
 exports.default = pageDocsSearch;
 
 /***/ })
-],[206]);
+],[193]);

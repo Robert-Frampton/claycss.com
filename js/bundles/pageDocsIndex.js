@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,42,43],[
+webpackJsonppageComponent([35,36,37],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -2427,11 +2427,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param93 = function() {
+  var param113 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index.children['docs']}, opt_data), null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param93}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param113}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2473,7 +2473,6 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
         ie_close('nav');
       ie_close('div');
     ie_close('div');
-    $footer(null, null, opt_ijData);
   ie_close('div');
 }
 exports.guide = $guide;
@@ -2481,72 +2480,10 @@ if (goog.DEBUG) {
   $guide.soyTemplateName = 'guide.guide';
 }
 
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $footer(opt_data, opt_ignored, opt_ijData) {
-  ie_open('div', null, null,
-      'class', 'footer');
-    ie_open('div', null, null,
-        'class', 'container-fluid');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-md-7');
-          ie_void('div', null, null,
-              'class', 'clearfix hidden-lg hidden-md');
-          ie_open('span');
-            itext('Brought to you by ');
-            ie_open('a', null, null,
-                'href', 'http://www.liferay.com',
-                'target', '_blank');
-              itext('Liferay, Inc.');
-            ie_close('a');
-          ie_close('span');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-5 text-right-lg');
-          ie_open('a', null, null,
-              'class', 'sticker sticker-default sticker-rounded sticker-static',
-              'href', 'https://twitter.com/Liferay_Lexicon',
-              'target', '_blank');
-            ie_open('svg', null, null,
-                'class', 'lexicon-icon');
-              ie_void('use', null, null,
-                  'xlink:href', '/vendor/lexicon/icons.svg#twitter');
-            ie_close('svg');
-          ie_close('a');
-          ie_open('a', null, null,
-              'class', 'sticker sticker-default sticker-rounded sticker-static',
-              'href', 'https://github.com/liferay/lexicon-site/issues',
-              'target', '_blank');
-            ie_open('svg', null, null,
-                'class', 'lexicon-icon');
-              ie_void('use', null, null,
-                  'xlink:href', '/vendor/lexicon/icons.svg#comments');
-            ie_close('svg');
-          ie_close('a');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('div');
-}
-exports.footer = $footer;
-if (goog.DEBUG) {
-  $footer.soyTemplateName = 'guide.footer';
-}
-
 exports.render.params = ["page","site"];
 exports.render.types = {"page":"any","site":"any"};
 exports.guide.params = ["page","content"];
 exports.guide.types = {"page":"any","content":"any"};
-exports.footer.params = [];
-exports.footer.types = {};
 templates = exports;
 return exports;
 
@@ -3319,7 +3256,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'sidebar-toggler-content sidenav-fixed sidenav-menu-slider',
         'id', 'clay-sidebar');
       ie_open('div', null, null,
-          'class', 'sidebar sidebar-clay-site sidenav-menu');
+          'class', 'sidebar sidebar-clay-site sidenav-menu d-flex flex-column');
         ie_open('div', null, null,
             'class', 'sidebar-header');
           ie_open('div', null, null,
@@ -3360,7 +3297,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_close('div');
         ie_close('div');
         ie_open('div', null, null,
-            'class', 'sidebar-body');
+            'class', 'sidebar-body mb-auto');
           ie_open('div', null, null,
               'class', 'sidebar-search');
             $templateAlias1({maxResults: 5, path: '/docs/', placeholder: 'Search'}, null, opt_ijData);
@@ -3392,6 +3329,36 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_close('div');
           $templateAlias2(opt_data, null, opt_ijData);
         ie_close('div');
+        ie_open('ul', null, null,
+            'class', 'nav-icons');
+          ie_open('li', null, null,
+              'class', 'd-block mb-3');
+            ie_open('a', null, null,
+                'class', 'rounded-circle sticker sticker-secondary',
+                'href', 'https://github.com/liferay/clay/issues',
+                'target', '_blank');
+              ie_open('svg', null, null,
+                  'aria-hidden', 'true',
+                  'class', 'lexicon-icon lexicon-icon-bars');
+                ie_void('use', null, null,
+                    'xlink:href', '/vendor/lexicon/icons.svg#comments');
+              ie_close('svg');
+            ie_close('a');
+          ie_close('li');
+          ie_open('li', null, null,
+              'class', 'd-block');
+            ie_open('a', null, null,
+                'class', 'rounded-circle sticker sticker-secondary',
+                'href', 'https://github.com/liferay/clay',
+                'target', '_blank');
+              ie_open('img', null, null,
+                  'class', 'lexicon-icon',
+                  'src', '/images/home/GitHub-Mark-64px.svg',
+                  'alt', '');
+              ie_close('img');
+            ie_close('a');
+          ie_close('li');
+        ie_close('ul');
       ie_close('div');
     ie_close('nav');
   ie_close('div');
@@ -11103,157 +11070,7 @@ exports.default = parseFromAnchor;
 /* 129 */,
 /* 130 */,
 /* 131 */,
-/* 132 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDocsIndex", function() { return pageDocsIndex; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from index.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace pageDocsIndex.
- * @public
- */
-
-goog.module('pageDocsIndex.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricSearchAutocomplete.incrementaldom', 'render');
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Sidebar.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('main.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param158 = function() {
-    $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index.children['docs']}, opt_data), null, opt_ijData);
-    $topics(opt_data, null, opt_ijData);
-  };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param158}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'pageDocsIndex.render';
-}
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $topics(opt_data, opt_ignored, opt_ijData) {
-  ie_open('div', null, null,
-      'class', 'sidebar-offset');
-    ie_open('div', null, null,
-        'class', 'container-fluid');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-xs-12');
-          ie_open('h1');
-            itext('Docs');
-          ie_close('h1');
-          ie_open('p');
-            itext('Start learning how to leverage the power of ');
-            var dyn7 = opt_data.site.title;
-            if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
-            itext(' in your project.');
-          ie_close('p');
-        ie_close('div');
-      ie_close('div');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'container-fluid');
-          ie_open('form', null, null,
-              'action', '/docs/search.html',
-              'method', 'GET',
-              'enctype', 'multipart/form-data');
-            ie_open('div', null, null,
-                'class', 'row');
-              ie_open('div', null, null,
-                  'class', 'col-md-6 col-md-offset-2');
-                $templateAlias3({maxResults: 3, path: '/docs/', placeholder: 'Search Docs'}, null, opt_ijData);
-              ie_close('div');
-              ie_open('div', null, null,
-                  'class', 'col-md-2 col-xs-12');
-                ie_open('button', null, null,
-                    'class', 'btn btn-block btn-primary',
-                    'type', 'submit');
-                  itext('Search');
-                ie_close('button');
-              ie_close('div');
-            ie_close('div');
-          ie_close('form');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('div');
-}
-exports.topics = $topics;
-if (goog.DEBUG) {
-  $topics.soyTemplateName = 'pageDocsIndex.topics';
-}
-
-exports.render.params = ["site"];
-exports.render.types = {"site":"any"};
-exports.topics.params = ["site"];
-exports.topics.types = {"site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class pageDocsIndex extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 132 */,
 /* 133 */,
 /* 134 */,
 /* 135 */,
@@ -11306,27 +11123,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templa
 /* 182 */,
 /* 183 */,
 /* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11356,9 +11153,9 @@ __webpack_require__(17);
 
 __webpack_require__(18);
 
-var _indexSoy = __webpack_require__(132);
+var _indexHtml = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./index.html.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _indexHtml2 = _interopRequireDefault(_indexHtml);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11382,9 +11179,9 @@ var pageDocsIndex = function (_Component) {
 
 ;
 
-_metalSoy2.default.register(pageDocsIndex, _indexSoy2.default);
+_metalSoy2.default.register(pageDocsIndex, _indexHtml2.default);
 
 exports.default = pageDocsIndex;
 
 /***/ })
-],[205]);
+],[185]);
